@@ -1,0 +1,74 @@
+﻿@model HorseDelux.Models.Horse
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Horse</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Breed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Breed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Height)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Height)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HeartGirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeartGirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LengthToHip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LengthToHip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LengthOfHorse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LengthOfHorse)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.HorseId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

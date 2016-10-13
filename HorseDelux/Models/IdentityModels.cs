@@ -29,5 +29,7 @@ namespace HorseDelux.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<HorseDelux.Models.Horse> Horses { get; set; }
     }
 }
